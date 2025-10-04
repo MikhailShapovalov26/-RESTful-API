@@ -1,4 +1,4 @@
-package ru.netology.bff;
+package ru.netology.bff.DTO;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

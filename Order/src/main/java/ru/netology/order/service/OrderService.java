@@ -1,12 +1,16 @@
-package ru.netology.order;
+package ru.netology.order.service;
+
+import org.springframework.stereotype.Service;
+import ru.netology.order.model.Order;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
+@Service
 public class OrderService {
-    HashMap<Integer, Order> orders = new HashMap<>();
+    private final HashMap<Integer, Order> orders = new HashMap<>();
 
     public OrderService() {
         orders.put(1, new Order(1, 150, 840, Arrays.asList("Laptop", "Mouse", "Keyboard", "Monitor")));

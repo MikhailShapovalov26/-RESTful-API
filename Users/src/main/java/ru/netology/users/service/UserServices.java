@@ -1,12 +1,13 @@
-package ru.netology.users;
+package ru.netology.users.service;
 
 import org.springframework.stereotype.Service;
+import ru.netology.users.model.User;
 
 import java.util.HashMap;
 
 @Service
 public class UserServices {
-    HashMap<Integer, User> users = new HashMap<>();
+    private final HashMap<Integer, User> users = new HashMap<>();
 
     public UserServices() {
         users.put(1, new User("John", "john@example.com", "Smith", "+1234567890", "123 Main St"));
@@ -25,8 +26,6 @@ public class UserServices {
         users.put(14, new User("Karen", "karen@example.com", "Thomas", "+1234567803", "357 Sequoia Way"));
         users.put(15, new User("Paul", "paul@example.com", "Moore", "+1234567804", "486 Cypress Ct"));
     }
-
-
 
     public User getUsers(int id) {
         return users.get(id);

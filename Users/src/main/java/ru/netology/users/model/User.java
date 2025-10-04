@@ -1,4 +1,4 @@
-package ru.netology.users;
+package ru.netology.users.model;
 
 
 public class User {
